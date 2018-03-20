@@ -17,11 +17,11 @@
               <el-tab-pane label="普通登录" name="first">
                 <el-form  :model="loginPub" :label-position="labelPosition" label-width="100px">
                   <el-form-item label="用户名">
-                    <el-input v-model="loginPub.name" placeholder="邮箱/手机"></el-input>
+                    <el-input v-model="loginPub.name" placeholder="请输入用户名"></el-input>
                   </el-form-item>
                   <p class="forgetPsw">忘记密码?</p>
                   <el-form-item label="密码">
-                    <el-input v-model="loginPub.password" placeholder="密码"></el-input>
+                    <el-input type="password" v-model="loginPub.password" placeholder="请输入密码"></el-input>
                   </el-form-item>
                   <el-form-item>
                     <el-button type="primary">登录</el-button>
